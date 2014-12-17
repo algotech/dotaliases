@@ -36,3 +36,6 @@ alias ci='composer install'
 
 # vim
 alias m='mvim .'
+
+# ls
+alias l='ls -la'
