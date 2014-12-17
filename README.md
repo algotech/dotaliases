@@ -1,7 +1,7 @@
-dotaliases
-==========
+.aliases
+========
 
-My .liases files
+My .aliases files
 
 Clone it into `.aliases` folder:
 ```bash
