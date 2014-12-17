@@ -9,14 +9,17 @@ alias gp='git pull --rebase'
 alias gb='git branch'
 
 alias ga='git add'
+alias gr='git rm'
 
 alias gc='git commit'
+alias gcm='git commit -m'
 alias gca='git commit --amend'
 alias gcv='git commit --no-verify'
 
 alias gd='git diff --color-words'
 alias gl='git log --oneline --decorate'
 
+alias gri='git rebase -i'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
 alias grs='git rebase --skip'
