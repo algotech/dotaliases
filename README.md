@@ -1,19 +1,14 @@
-dotbash
-=======
+dotaliases
+==========
 
-My .bash_* files
+My .liases files
 
-Clone it into `.bash` folder:
+Clone it into `.aliases` folder:
 ```bash
-git clone git@github.com:stocarul/dotbash.git .bash
+git clone git@github.com:stocarul/dotaliases.git .aliases
 ```
 
 Add to `~/.bash_profile`:
 ```bash
-source ~/.bash_aliases
-```
-
-Symlink the `.bash_aliases` in your home directory
-```bash
-ln -s ~/.bash/.bash_aliases ~/.bash_aliases
+source ~/.aliases/.bash_aliases
 ```
