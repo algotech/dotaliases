@@ -25,5 +25,11 @@ alias gsl='git stash list'
 alias gss='git stash save'
 alias gsp='git stash pop'
 
+# composer
+alias c='composer'
+
+alias cu='composer update'
+alias ci='composer install'
+
 # vim
 alias m='mvim .'
