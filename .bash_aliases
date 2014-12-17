@@ -1,3 +1,4 @@
+# git
 alias git='hub'
 
 alias g='git status -sb'
@@ -23,3 +24,6 @@ alias grs='git rebase --skip'
 alias gsl='git stash list'
 alias gss='git stash save'
 alias gsp='git stash pop'
+
+# vim
+alias m='mvim .'
