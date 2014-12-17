@@ -10,5 +10,5 @@ git clone git@github.com:stocarul/dotaliases.git .aliases
 
 Add to `~/.bash_profile`:
 ```bash
-source ~/.aliases/.bash_aliases
+source ~/.aliases/bash_aliases
 ```
