@@ -39,3 +39,7 @@ alias m='mvim .'
 
 # ls
 alias l='ls -la'
+
+# phpunit
+alias p='phpunit'
+alias pa='phpunit -c app'
