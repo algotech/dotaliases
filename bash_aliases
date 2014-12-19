@@ -40,6 +40,12 @@ alias m='mvim .'
 # ls
 alias l='ls -la'
 
+# symfony
+alias sf='php app/console'
+alias sfd='php app/console --env=dev'
+alias sfp='php app/console --env=prod'
+alias sfs='php app/console se:ru'
+
 # phpunit
 alias p='phpunit'
 alias pa='phpunit -c app'
