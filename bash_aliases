@@ -1,3 +1,5 @@
+alias sudo='sudo '
+
 # git
 alias git='hub'
 
