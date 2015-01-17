@@ -31,31 +31,31 @@ Required commands:
 #### Bash aliases
 
 - git
-  - **git**: hub
   - **g**: git status -sb
-  - **gf**: git fetch
-  - **gp**: git pull --rebase
-  - **gb**: git branch
   - **ga**: git add
-  - **gr**: git rm
+  - **gb**: git branch
   - **gc**: git commit
-  - **gcm**: git commit -m
   - **gca**: git commit --amend
+  - **gcm**: git commit -m
   - **gcv**: git commit --no-verify
   - **gd**: git diff --color-words
+  - **gf**: git fetch
+  - **git**: hub
   - **gl**: git log --oneline --decorate
-  - **gri**: git rebase -i
-  - **grc**: git rebase --continue
+  - **gp**: git pull --rebase
+  - **gr**: git rm
   - **gra**: git rebase --abort
+  - **grc**: git rebase --continue
+  - **gri**: git rebase -i
   - **grs**: git rebase --skip
   - **gsl**: git stash list
-  - **gss**: git stash save
   - **gsp**: git stash pop
+  - **gss**: git stash save
 
 - composer
   - **c**: composer
-  - **cu**: composer update
   - **ci**: composer install
+  - **cu**: composer update
 
 - vim
   - **m**: mvim .
@@ -74,8 +74,8 @@ Required commands:
   - **pa**: phpunit -c app
 
 #### Git aliases
-  - **hist**: log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
-  - **graph**: log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
-  - **unstage**: reset HEAD --
-  - **restore**: checkout --
   - **co**: checkout
+  - **graph**: log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
+  - **hist**: log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
+  - **restore**: checkout --
+  - **unstage**: reset HEAD --
