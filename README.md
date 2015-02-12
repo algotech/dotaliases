@@ -43,6 +43,10 @@ Required commands:
   - **git**: hub
   - **gl**: git log --oneline --decorate
   - **gp**: git pull --rebase
+  - **gpod**: git push origin develop
+  - **gpom**: git push origin master
+  - **gpud**: git push upstream develop
+  - **gpum**: git push upstream master
   - **gr**: git rm
   - **gra**: git rebase --abort
   - **grc**: git rebase --continue
