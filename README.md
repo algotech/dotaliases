@@ -52,6 +52,12 @@ Required commands:
   - **gsp**: git stash pop
   - **gss**: git stash save
 
+- git hub
+  - **gh**: git browse -- /
+  - **ghi** git browse -- /issues
+  - **ghp**: git browse -- /pulls
+  - **ghw**: git browse -- /wiki
+
 - composer
   - **c**: composer
   - **ci**: composer install

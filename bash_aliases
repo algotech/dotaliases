@@ -22,6 +22,12 @@ alias gsl='git stash list'
 alias gsp='git stash pop'
 alias gss='git stash save'
 
+# git hub
+alias gh='git browse -- /'
+alias ghi='git browse -- /issues'
+alias ghp='git browse -- /pulls'
+alias ghw='git browse -- /wiki'
+
 # composer
 alias c='composer'
 alias ci='composer install'
