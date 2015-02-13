@@ -75,9 +75,18 @@ Required commands:
 
 - symfony
   - **sf**: php app/console
+  - **sfad**: php app/console assetic:dump
+  - **sfai**: php app/console assets:install web --symlink
+  - **sfaw**: php app/console assetic:watch
+  - **sfcc**: php app/console cache:clear
+  - **sfcd**: php app/console container:debug | grep
+  - **sfcw**: php app/console cache:warmup
   - **sfd**: php app/console --env=dev
   - **sfp**: php app/console --env=prod
+  - **sfrd**: php app/console router:debug | grep
   - **sfs**: php app/console se:ru
+  - **sft**: php app/console --env=test
+  - **sftd**: php app/console twig:debug | grep
 
 - phpunit
   - **p**: phpunit
