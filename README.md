@@ -99,6 +99,14 @@ Required commands:
   - **p**: phpunit
   - **pa**: phpunit -c app
 
+- cordova
+  - **cba**: cordova build android
+  - **cbi**: cordova build ios
+  - **cea**: cordova emulate android
+  - **cei**: cordova emulate ios
+  - **cra**: cordova run android --device
+  - **cri**: cordova run ios --device
+
 #### Git aliases
   - **co**: checkout
   - **graph**: log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
