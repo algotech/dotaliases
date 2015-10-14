@@ -9,7 +9,7 @@ My .aliases files for:
 
 Clone it into `.aliases` folder:
 ```bash
-git clone git@github.com:stocarul/dotaliases.git .aliases
+git clone https://github.com/stocarul/dotaliases.git .aliases
 ```
 
 Add to `~/.bash_profile`:
