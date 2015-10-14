@@ -78,7 +78,7 @@ Required commands:
   - **m**: mvim .
 
 - ls
-  - **l**: ls -la
+  - **l**: ls -lah
 
 - symfony
   - **sf**: php app/console
