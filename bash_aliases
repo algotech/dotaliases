@@ -48,7 +48,7 @@ alias cu='composer update'
 alias m='mvim .'
 
 # ls
-alias l='ls -la'
+alias l='ls -lah'
 
 # symfony
 alias sf='php app/console'
