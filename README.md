@@ -45,13 +45,20 @@ Required commands:
   - **gp**: git pull --rebase
   - **gpod**: git push origin develop
   - **gpom**: git push origin master
+  - **gpos**: git push origin staging
+  - **gprod**: git pull --rebase origin develop
+  - **gprom**: git pull --rebase origin master
+  - **gpros**: git pull --rebase origin staging
   - **gpud**: git push upstream develop
   - **gpum**: git push upstream master
+  - **gpus**: git push upstream staging
   - **gr**: git rm
   - **gra**: git rebase --abort
   - **grc**: git rebase --continue
+  - **grd**: git rebase develop
   - **gri**: git rebase -i
-  - **grs**: git rebase --skip
+  - **grm**: git rebase master
+  - **grs**: git rebase staging
   - **gsl**: git stash list
   - **gsp**: git stash pop
   - **gss**: git stash save
