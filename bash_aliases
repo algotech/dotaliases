@@ -69,3 +69,11 @@ alias sftd='php app/console twig:debug | grep'
 # phpunit
 alias p='phpunit'
 alias pa='phpunit -c app'
+
+# cordova
+alias cba='cordova build android'
+alias cbi='cordova build ios'
+alias cea='cordova emulate android'
+alias cei='cordova emulate ios'
+alias cra='cordova run android --device'
+alias cri='cordova run ios --device'
