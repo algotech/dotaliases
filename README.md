@@ -37,7 +37,6 @@ Required commands:
   - **gc**: git commit
   - **gca**: git commit --amend
   - **gcm**: git commit -m
-  - **gcv**: git commit --no-verify
   - **gd**: git diff --color-words
   - **gf**: git fetch
   - **git**: hub
