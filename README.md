@@ -37,7 +37,9 @@ Required commands:
   - **gc**: git commit
   - **gca**: git commit --amend
   - **gcm**: git commit -m
-  - **gcv**: git commit --no-verify
+  - **gcod**: git checkout develop
+  - **gcom**: git checkout master
+  - **gcos**: git checkout staging
   - **gd**: git diff --color-words
   - **gf**: git fetch
   - **git**: hub
