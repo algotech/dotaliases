@@ -1,0 +1,6 @@
+# Composer alias
+alias c='composer'
+
+# Composer install and update aliases
+alias ci='composer install'
+alias cu='composer update'

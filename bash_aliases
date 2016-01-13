@@ -2,11 +2,7 @@ alias sudo='sudo '
 
 source ./bash/git_aliases
 source ./bash/github_aliases
-
-# composer
-alias c='composer'
-alias ci='composer install'
-alias cu='composer update'
+source ./bash/composer_aliases
 
 # vim
 alias m='mvim .'
