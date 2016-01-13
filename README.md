@@ -90,14 +90,17 @@ Required commands:
   - **sfai**: php app/console assets:install web --symlink
   - **sfaw**: php app/console assetic:watch
   - **sfcc**: php app/console cache:clear
-  - **sfcd**: php app/console container:debug | grep
+  - **sfcd**: php app/console container:debug
+  - **sfcdg**: php app/console container:debug | grep
   - **sfcw**: php app/console cache:warmup
   - **sfd**: php app/console --env=dev
   - **sfp**: php app/console --env=prod
-  - **sfrd**: php app/console router:debug | grep
+  - **sfrd**: php app/console router:debug
+  - **sfrdg**: php app/console router:debug | grep
   - **sfs**: php app/console se:ru
   - **sft**: php app/console --env=test
-  - **sftd**: php app/console twig:debug | grep
+  - **sftd**: php app/console twig:debug
+  - **sftdg**: php app/console twig:debug | grep
 
 - phpunit
   - **p**: phpunit
