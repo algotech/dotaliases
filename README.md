@@ -1,15 +1,16 @@
 .aliases
 ========
 
-My .aliases files for:
+Helpful aliases commands for bash:
  - bash
  - git
 
 ## Installation
 
-Clone it into `.aliases` folder:
+Clone it into `.aliases` folder in your home directory:
 ```bash
-git clone https://github.com/stocarul/dotaliases.git .aliases
+cd ~
+git clone https://github.com/algotech/dotaliases.git .aliases
 ```
 
 Add to `~/.bash_profile`:
