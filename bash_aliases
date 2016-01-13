@@ -3,9 +3,7 @@ alias sudo='sudo '
 source ./bash/git_aliases
 source ./bash/github_aliases
 source ./bash/composer_aliases
-
-# vim
-alias m='mvim .'
+source ./bash/vim_aliases
 
 # ls
 alias l='ls -lah'
