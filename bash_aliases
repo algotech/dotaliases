@@ -1,13 +1,7 @@
 alias sudo='sudo '
 
 source ./bash/git_aliases
-
-# git hub
-alias git='hub'
-alias gh='git browse -- /'
-alias ghi='git browse -- /issues'
-alias ghp='git browse -- /pulls'
-alias ghw='git browse -- /wiki'
+source ./bash/github_aliases
 
 # composer
 alias c='composer'
