@@ -103,8 +103,8 @@ Required commands:
   - **sftdg**: php app/console twig:debug | grep
 
 - phpunit
-  - **p**: phpunit
-  - **pa**: phpunit -c app
+  - **pu**: phpunit
+  - **pua**: phpunit -c app
 
 - cordova
   - **cba**: cordova build android

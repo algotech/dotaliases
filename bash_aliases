@@ -5,13 +5,10 @@ source ./bash/github_aliases
 source ./bash/composer_aliases
 source ./bash/vim_aliases
 source ./bash/symfony_aliases
+source ./bash/phpunit_aliases
 
 # ls
 alias l='ls -lah'
-
-# phpunit
-alias p='phpunit'
-alias pa='phpunit -c app'
 
 # cordova
 alias cba='cordova build android'
