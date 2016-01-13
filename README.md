@@ -43,6 +43,7 @@ Required commands:
   - **gcos**: git checkout staging
   - **gd**: git diff --color-words
   - **gf**: git fetch
+  - **gfa**: git fetch --all
   - **git**: hub
   - **gl**: git log --oneline --decorate
   - **gp**: git pull --rebase

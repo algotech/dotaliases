@@ -1,0 +1,58 @@
+# Git status alias
+alias g='git status -sb'
+
+# Git add and remove aliases
+alias ga='git add'
+alias gr='git rm'
+
+# Git branch alias
+alias gb='git branch'
+
+# Git commit aliases
+alias gc='git commit'
+alias gca='git commit --amend'
+alias gcm='git commit -m'
+
+# Git checkout aliases
+alias gcod='git checkout develop'
+alias gcom='git checkout master'
+alias gcos='git checkout staging'
+
+# Git fetch aliases
+alias gf='git fetch'
+alias gfa='git fetch --all'
+
+# Git pull alias
+alias gp='git pull --rebase'
+
+# Git pull to origin aliases
+alias gprod='git pull --rebase origin develop'
+alias gprom='git pull --rebase origin master'
+alias gpros='git pull --rebase origin staging'
+
+# Git push to origin aliases
+alias gpod='git push origin develop'
+alias gpom='git push origin master'
+alias gpos='git push origin staging'
+
+# Git push to upstream aliases
+alias gpud='git push upstream develop'
+alias gpum='git push upstream master'
+alias gpus='git push upstream staging'
+
+# Git rebase aliases
+alias gra='git rebase --abort'
+alias grc='git rebase --continue'
+alias grd='git rebase develop'
+alias gri='git rebase -i'
+alias grm='git rebase master'
+alias grs='git rebase staging'
+
+# Git stash aliases
+alias gsl='git stash list'
+alias gsp='git stash pop'
+alias gss='git stash save'
+
+# Git diff and log aliases
+alias gd='git diff --color-words'
+alias gl='git log --oneline --decorate'
