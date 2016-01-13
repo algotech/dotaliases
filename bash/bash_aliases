@@ -1,0 +1,2 @@
+# Smart ls alias
+alias l='ls -lah'

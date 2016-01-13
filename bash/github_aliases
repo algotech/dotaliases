@@ -1,0 +1,8 @@
+# Alias for hub. It contains all git commans and more
+alias git='hub'
+
+# Open the GitHub page for the current repository
+alias gh='git browse -- /'
+alias ghi='git browse -- /issues'
+alias ghp='git browse -- /pulls'
+alias ghw='git browse -- /wiki'
