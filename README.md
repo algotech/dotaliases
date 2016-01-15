@@ -1,9 +1,28 @@
 .aliases
 ========
 
-Helpful aliases commands for bash:
- - bash
- - git
+- [Aliases for bash and git](#aliases-for-bash-and-git)
+- [Installation](#installation)
+- Started with passion by [AlgoTech](http://www.algotech.solutions)
+
+## Aliases for bash and git
+
+#### Bash aliases for:
+  - *Git* - [aliases](doc/bash/git_aliases.md)
+  - *GitHub* - [aliases](doc/bash/github_aliases.md)
+  - *Composer* - [aliases](doc/bash/composer_aliases.md)
+  - *Vim* - [aliases](doc/bash/vim_aliases.md)
+  - *Bash* - [aliases](doc/bash/bash_aliases.md)
+  - *Symfony* - [aliases](doc/bash/symfony_aliases.md)
+  - *PHPUnit* - [aliases](doc/bash/phpunit_aliases.md)
+  - *Cordova* - [aliases](doc/bash/cordova_aliases.md)
+
+#### Git aliases
+  - **co**: checkout
+  - **graph**: log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
+  - **hist**: log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
+  - **restore**: checkout --
+  - **unstage**: reset HEAD --
 
 ## Installation
 
@@ -13,110 +32,13 @@ cd ~
 git clone https://github.com/algotech/dotaliases.git .aliases
 ```
 
-Add to `~/.bash_profile`:
+To enable bash aliases: add to `~/.bash_profile` or `~/.profile`:
 ```bash
 source ~/.aliases/bash_aliases
 ```
 
-Add to `~/.gitconfig`:
+To enable git aliases: add to `~/.gitconfig`:
 ```bash
 [include]
     path = ~/.aliases/git_aliases
 ```
-
-Required commands:
- - [hub](https://hub.github.com)
-
-## Aliases
-
-#### Bash aliases
-
-- git
-  - **g**: git status -sb
-  - **ga**: git add
-  - **gb**: git branch
-  - **gc**: git commit
-  - **gca**: git commit --amend
-  - **gcm**: git commit -m
-  - **gcod**: git checkout develop
-  - **gcom**: git checkout master
-  - **gcos**: git checkout staging
-  - **gd**: git diff --color-words
-  - **gf**: git fetch
-  - **gfa**: git fetch --all
-  - **git**: hub
-  - **gl**: git log --oneline --decorate
-  - **gp**: git pull --rebase
-  - **gpod**: git push origin develop
-  - **gpom**: git push origin master
-  - **gpos**: git push origin staging
-  - **gprod**: git pull --rebase origin develop
-  - **gprom**: git pull --rebase origin master
-  - **gpros**: git pull --rebase origin staging
-  - **gpud**: git push upstream develop
-  - **gpum**: git push upstream master
-  - **gpus**: git push upstream staging
-  - **gr**: git rm
-  - **gra**: git rebase --abort
-  - **grc**: git rebase --continue
-  - **grd**: git rebase develop
-  - **gri**: git rebase -i
-  - **grm**: git rebase master
-  - **grs**: git rebase staging
-  - **gsl**: git stash list
-  - **gsp**: git stash pop
-  - **gss**: git stash save
-
-- git hub
-  - **gh**: git browse -- /
-  - **ghi** git browse -- /issues
-  - **ghp**: git browse -- /pulls
-  - **ghw**: git browse -- /wiki
-
-- composer
-  - **c**: composer
-  - **ci**: composer install
-  - **cu**: composer update
-
-- vim
-  - **m**: mvim .
-
-- ls
-  - **l**: ls -lah
-
-- symfony
-  - **sf**: php app/console
-  - **sfad**: php app/console assetic:dump
-  - **sfai**: php app/console assets:install web --symlink
-  - **sfaw**: php app/console assetic:watch
-  - **sfcc**: php app/console cache:clear
-  - **sfcd**: php app/console container:debug
-  - **sfcdg**: php app/console container:debug | grep
-  - **sfcw**: php app/console cache:warmup
-  - **sfd**: php app/console --env=dev
-  - **sfp**: php app/console --env=prod
-  - **sfrd**: php app/console router:debug
-  - **sfrdg**: php app/console router:debug | grep
-  - **sfs**: php app/console se:ru
-  - **sft**: php app/console --env=test
-  - **sftd**: php app/console twig:debug
-  - **sftdg**: php app/console twig:debug | grep
-
-- phpunit
-  - **pu**: phpunit
-  - **pua**: phpunit -c app
-
-- cordova
-  - **cba**: cordova build android
-  - **cbi**: cordova build ios
-  - **cea**: cordova emulate android
-  - **cei**: cordova emulate ios
-  - **cra**: cordova run android --device
-  - **cri**: cordova run ios --device
-
-#### Git aliases
-  - **co**: checkout
-  - **graph**: log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
-  - **hist**: log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
-  - **restore**: checkout --
-  - **unstage**: reset HEAD --
