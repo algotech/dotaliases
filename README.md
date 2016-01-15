@@ -42,7 +42,3 @@ To enable git aliases: add to `~/.gitconfig`:
 [include]
     path = ~/.aliases/git_aliases
 ```
-
-Required commands:
- - [hub](https://hub.github.com)
-

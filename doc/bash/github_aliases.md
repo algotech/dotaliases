@@ -1,8 +1,12 @@
 # Bash aliases for GitHub #
 
+- [Requirements](#requirements)
 - [GitHub](#github)
 - [GitHub page for repositories](#github-page-for-repositories)
 - [Back to main page](../../README.md)
+
+### Requirements ###
+Make sure you have the [hub](https://hub.github.com) command installed.
 
 ### GitHub ###
 - **git**: `hub`
