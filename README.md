@@ -37,15 +37,7 @@ Required commands:
   - *Bash* - [aliases](doc/bash/bash_aliases.md)
   - *Symfony* - [aliases](doc/bash/symfony_aliases.md)
   - *PHPUnit* - [aliases](doc/bash/phpunit_aliases.md)
-
-
-- cordova
-  - **cba**: cordova build android
-  - **cbi**: cordova build ios
-  - **cea**: cordova emulate android
-  - **cei**: cordova emulate ios
-  - **cra**: cordova run android --device
-  - **cri**: cordova run ios --device
+  - *Cordova* - [aliases](doc/bash/cordova_aliases.md)
 
 #### Git aliases
   - **co**: checkout
