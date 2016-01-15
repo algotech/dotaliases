@@ -36,11 +36,8 @@ Required commands:
   - *Vim* - [aliases](doc/bash/vim_aliases.md)
   - *Bash* - [aliases](doc/bash/bash_aliases.md)
   - *Symfony* - [aliases](doc/bash/symfony_aliases.md)
+  - *PHPUnit* - [aliases](doc/bash/phpunit_aliases.md)
 
-
-- phpunit
-  - **pu**: phpunit
-  - **pua**: phpunit -c app
 
 - cordova
   - **cba**: cordova build android
