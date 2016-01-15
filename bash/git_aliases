@@ -25,7 +25,7 @@ alias gfa='git fetch --all'
 # Git pull alias
 alias gp='git pull --rebase'
 
-# Git pull to origin aliases
+# Git pull from origin aliases
 alias gprod='git pull --rebase origin develop'
 alias gprom='git pull --rebase origin master'
 alias gpros='git pull --rebase origin staging'
