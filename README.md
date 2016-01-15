@@ -33,10 +33,8 @@ Required commands:
   - *Git* - [aliases](doc/bash/git_aliases.md)
   - *GitHub* - [aliases](doc/bash/github_aliases.md)
   - *Composer* - [aliases](doc/bash/composer_aliases.md)
+  - *Vim* - [aliases](doc/bash/vim_aliases.md)
 
-
-- vim
-  - **m**: mvim .
 
 - ls
   - **l**: ls -lah
