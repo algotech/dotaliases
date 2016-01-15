@@ -32,12 +32,8 @@ Required commands:
 #### Bash aliases for:
   - *Git* - [aliases](doc/bash/git_aliases.md)
   - *GitHub* - [aliases](doc/bash/github_aliases.md)
+  - *Composer* - [aliases](doc/bash/composer_aliases.md)
 
-
-- composer
-  - **c**: composer
-  - **ci**: composer install
-  - **cu**: composer update
 
 - vim
   - **m**: mvim .
