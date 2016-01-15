@@ -34,10 +34,8 @@ Required commands:
   - *GitHub* - [aliases](doc/bash/github_aliases.md)
   - *Composer* - [aliases](doc/bash/composer_aliases.md)
   - *Vim* - [aliases](doc/bash/vim_aliases.md)
+  - *Bash* - [aliases](doc/bash/bash_aliases.md)
 
-
-- ls
-  - **l**: ls -lah
 
 - symfony
   - **sf**: php app/console
