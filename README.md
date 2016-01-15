@@ -31,14 +31,8 @@ Required commands:
 
 #### Bash aliases for:
   - *Git* - [aliases](doc/bash/git_aliases.md)
+  - *GitHub* - [aliases](doc/bash/github_aliases.md)
 
-
-- git hub
-  - **git**: hub
-  - **gh**: git browse -- /
-  - **ghi** git browse -- /issues
-  - **ghp**: git browse -- /pulls
-  - **ghw**: git browse -- /wiki
 
 - composer
   - **c**: composer
