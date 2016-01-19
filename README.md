@@ -1,9 +1,15 @@
 .aliases
 ========
 
-- [Aliases for bash and git](#aliases-for-bash-and-git)
-- [Installation](#installation)
-- Started with passion by [AlgoTech](http://www.algotech.solutions)
+If you use the terminal on a daily basis, you'll eventually find yourself
+wanting aliases for your most commonly-used commands. It's incredibly useful to
+be able to execute your commands with only a few keystrokes that eventually
+get hardcoded into muscle memory.
+
+This is an easy to install project that contains a growing list of aliases
+for different frameworks and tools that works on any `*nix` system.
+
+Project started with passion by [AlgoTech](http://www.algotech.solutions)!
 
 ## Aliases for bash and git
 
