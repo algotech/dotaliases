@@ -1,10 +1,10 @@
 alias sudo='sudo '
 
-source ./bash/bash_aliases
-source ./bash/git_aliases
-source ./bash/github_aliases
-source ./bash/composer_aliases
-source ./bash/vim_aliases
-source ./bash/symfony_aliases
-source ./bash/phpunit_aliases
-source ./bash/cordova_aliases
+source $HOME/.aliases/bash/bash_aliases
+source $HOME/.aliases/bash/git_aliases
+source $HOME/.aliases/bash/github_aliases
+source $HOME/.aliases/bash/composer_aliases
+source $HOME/.aliases/bash/vim_aliases
+source $HOME/.aliases/bash/symfony_aliases
+source $HOME/.aliases/bash/phpunit_aliases
+source $HOME/.aliases/bash/cordova_aliases
