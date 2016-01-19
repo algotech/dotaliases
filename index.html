@@ -76,11 +76,15 @@ of aliases for different frameworks and tools that works on any <code>*nix</code
 <div class="highlight highlight-source-shell"><pre><span class="pl-c1">cd</span> <span class="pl-k">~</span>
 git clone https://github.com/algotech/dotaliases.git .aliases</pre></div>
 
-<p>To enable bash aliases: add to <code>~/.bash_profile</code> or <code>~/.profile</code>:</p>
+<p>Enable bash aliases for new terminals: add to <code>~/.bash_profile</code> or <code>~/.profile</code></p>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-c1">source</span> <span class="pl-k">~</span>/.aliases/bash_aliases</pre></div>
 
-<p>To enable git aliases: add to <code>~/.gitconfig</code>:</p>
+<p>Enable bash aliases in the current opened terminal by running the command:</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">source</span> <span class="pl-k">~</span>/.aliases/bash_aliases</pre></div>
+
+<p>Enable git aliases: add to <code>~/.gitconfig</code></p>
 
 <div class="highlight highlight-source-shell"><pre>[include]
     path = <span class="pl-k">~</span>/.aliases/git_aliases</pre></div>
