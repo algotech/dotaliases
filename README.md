@@ -38,12 +38,17 @@ cd ~
 git clone https://github.com/algotech/dotaliases.git .aliases
 ```
 
-To enable bash aliases: add to `~/.bash_profile` or `~/.profile`:
+Enable bash aliases for new terminals: add to `~/.bash_profile` or `~/.profile`
 ```bash
 source ~/.aliases/bash_aliases
 ```
 
-To enable git aliases: add to `~/.gitconfig`:
+Enable bash aliases in the current opened terminal by running the command:
+```bash
+source ~/.aliases/bash_aliases
+```
+
+Enable git aliases: add to `~/.gitconfig`
 ```bash
 [include]
     path = ~/.aliases/git_aliases
