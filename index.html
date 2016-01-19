@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Dotaliases by algotech</title>
+    <title>.aliases by algotech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Dotaliases</h1>
+      <h1 class="project-name">.aliases</h1>
       <h2 class="project-tagline">Helpful bash aliases commands</h2>
       <a href="https://github.com/algotech/dotaliases" class="btn">View on GitHub</a>
       <a href="https://github.com/algotech/dotaliases/zipball/master" class="btn">Download .zip</a>
@@ -22,60 +22,50 @@
       <h1>
 <a id="aliases" class="anchor" href="#aliases" aria-hidden="true"><span class="octicon octicon-link"></span></a>.aliases</h1>
 
-<ul>
-<li><a href="#aliases-for-bash-and-git">Aliases for bash and git</a></li>
-<li><a href="#installation">Installation</a></li>
-<li>Started with passion by <a href="http://www.algotech.solutions">AlgoTech</a>
-</li>
-</ul>
+<p>If you use the terminal on a daily basis, you'll eventually find yourself
+wanting aliases for your most commonly-used commands. It's incredibly useful to
+be able to execute your commands with only a few keystrokes that eventually
+get hardcoded into muscle memory.</p>
+
+<p>This is an easy to <a href="#installation">install</a> project that contains a growing list
+of aliases for different frameworks and tools that works on any <code>*nix</code> system.</p>
+
+<p>Project started with passion by <a href="http://www.algotech.solutions">AlgoTech</a>!</p>
 
 <h2>
-<a id="aliases-for-bash-and-git" class="anchor" href="#aliases-for-bash-and-git" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aliases for bash and git</h2>
+<a id="aliases-list" class="anchor" href="#aliases-list" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aliases list</h2>
 
 <h4>
-<a id="bash-aliases-for" class="anchor" href="#bash-aliases-for" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bash aliases for:</h4>
+<a id="bash-aliases-by-tools" class="anchor" href="#bash-aliases-by-tools" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bash aliases by tools:</h4>
 
 <ul>
-<li>
-<em>Git</em> - <a href="doc/bash/git_aliases.md">aliases</a>
-</li>
-<li>
-<em>GitHub</em> - <a href="doc/bash/github_aliases.md">aliases</a>
-</li>
-<li>
-<em>Composer</em> - <a href="doc/bash/composer_aliases.md">aliases</a>
-</li>
-<li>
-<em>Vim</em> - <a href="doc/bash/vim_aliases.md">aliases</a>
-</li>
-<li>
-<em>Bash</em> - <a href="doc/bash/bash_aliases.md">aliases</a>
-</li>
-<li>
-<em>Symfony</em> - <a href="doc/bash/symfony_aliases.md">aliases</a>
-</li>
-<li>
-<em>PHPUnit</em> - <a href="doc/bash/phpunit_aliases.md">aliases</a>
-</li>
-<li>
-<em>Cordova</em> - <a href="doc/bash/cordova_aliases.md">aliases</a>
-</li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/git_aliases.md">Git aliases</a></li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/github_aliases.md">GitHub aliases</a></li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/composer_aliases.md">Composer aliases</a></li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/symfony_aliases.md">Symfony aliases</a></li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/phpunit_aliases.md">PHPUnit aliases</a></li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/cordova_aliases.md">Cordova aliases</a></li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/bash_aliases.md">Bash aliases</a></li>
+<li><a href="https://github.com/algotech/dotaliases/blob/master/doc/bash/vim_aliases.md">Vim aliases</a></li>
 </ul>
 
 <h4>
-<a id="git-aliases" class="anchor" href="#git-aliases" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git aliases</h4>
+<a id="git-aliases" class="anchor" href="#git-aliases" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git aliases:</h4>
 
 <ul>
 <li>
-<strong>co</strong>: checkout</li>
+<strong>co</strong>: shortcut for <code>checkout</code>
+</li>
 <li>
-<strong>graph</strong>: log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short</li>
+<strong>graph</strong>: a nice tree with all the commits and their parents</li>
 <li>
-<strong>hist</strong>: log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate</li>
+<strong>hist</strong>: a compact list of commits from the current branch</li>
 <li>
-<strong>restore</strong>: checkout --</li>
+<strong>restore</strong>: shortcut for <code>checkout --</code>
+</li>
 <li>
-<strong>unstage</strong>: reset HEAD --</li>
+<strong>unstage</strong>: shortcut for <code>reset HEAD --</code>
+</li>
 </ul>
 
 <h2>
@@ -96,7 +86,7 @@ git clone https://github.com/algotech/dotaliases.git .aliases</pre></div>
     path = <span class="pl-k">~</span>/.aliases/git_aliases</pre></div>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/algotech/dotaliases">Dotaliases</a> is maintained by <a href="https://github.com/algotech">algotech</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/algotech/dotaliases">.aliases</a> is maintained by <a href="https://github.com/algotech">algotech</a>.</span>
 
         <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
