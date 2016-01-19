@@ -1,28 +1,34 @@
 .aliases
 ========
 
-- [Aliases for bash and git](#aliases-for-bash-and-git)
-- [Installation](#installation)
-- Started with passion by [AlgoTech](http://www.algotech.solutions)
+If you use the terminal on a daily basis, you'll eventually find yourself
+wanting aliases for your most commonly-used commands. It's incredibly useful to
+be able to execute your commands with only a few keystrokes that eventually
+get hardcoded into muscle memory.
 
-## Aliases for bash and git
+This is an easy to [install](#installation) project that contains a growing list
+of aliases for different frameworks and tools that works on any `*nix` system.
 
-#### Bash aliases for:
-  - *Git* - [aliases](doc/bash/git_aliases.md)
-  - *GitHub* - [aliases](doc/bash/github_aliases.md)
-  - *Composer* - [aliases](doc/bash/composer_aliases.md)
-  - *Vim* - [aliases](doc/bash/vim_aliases.md)
-  - *Bash* - [aliases](doc/bash/bash_aliases.md)
-  - *Symfony* - [aliases](doc/bash/symfony_aliases.md)
-  - *PHPUnit* - [aliases](doc/bash/phpunit_aliases.md)
-  - *Cordova* - [aliases](doc/bash/cordova_aliases.md)
+Project started with passion by [AlgoTech](http://www.algotech.solutions)!
 
-#### Git aliases
-  - **co**: checkout
-  - **graph**: log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
-  - **hist**: log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
-  - **restore**: checkout --
-  - **unstage**: reset HEAD --
+## Aliases list
+
+#### Bash aliases by tools:
+  - [Git aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/git_aliases.md)
+  - [GitHub aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/github_aliases.md)
+  - [Composer aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/composer_aliases.md)
+  - [Symfony aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/symfony_aliases.md)
+  - [PHPUnit aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/phpunit_aliases.md)
+  - [Cordova aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/cordova_aliases.md)
+  - [Bash aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/bash_aliases.md)
+  - [Vim aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/vim_aliases.md)
+
+#### Git aliases:
+  - **co**: shortcut for `checkout`
+  - **graph**: a nice tree with all the commits and their parents
+  - **hist**: a compact list of commits from the current branch
+  - **restore**: shortcut for `checkout --`
+  - **unstage**: shortcut for `reset HEAD --`
 
 ## Installation
 
