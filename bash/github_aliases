@@ -1,5 +1,7 @@
-# Alias for hub. It contains all git commans and more
-alias git='hub'
+# Alias for hub. It contains all git commands and more
+if command_exists hub ; then
+    alias git='hub'
+fi
 
 # Open the GitHub page for the current repository
 alias gh='git browse -- /'
