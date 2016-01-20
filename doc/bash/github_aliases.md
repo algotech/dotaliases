@@ -7,6 +7,11 @@
 
 ### Requirements ###
 Make sure you have the [hub](https://hub.github.com) command installed.
+After you install it reload the aliases for the current terminal window
+by running:
+```bash
+source ~/.aliases/bash_aliases
+```
 
 ### GitHub ###
 - **git**: `hub`

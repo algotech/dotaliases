@@ -1,5 +1,9 @@
 alias sudo='sudo '
 
+command_exists () {
+    type "$1" &> /dev/null ;
+}
+
 source $HOME/.aliases/bash/bash_aliases
 source $HOME/.aliases/bash/git_aliases
 source $HOME/.aliases/bash/github_aliases
