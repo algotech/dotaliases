@@ -14,6 +14,6 @@ alias djsu='python manage.py createsuperuser'
 alias djl='python manage.py loaddata'
 
 # Django Migrations
-alias djmkmig='python manage.py makemigrations'
-alias djmig='python manage.py migrate'
-alias djdatamig='python manage.py makemigrations --empty'
+alias djmm='python manage.py makemigrations'
+alias djm='python manage.py migrate'
+alias djmme='python manage.py makemigrations --empty'

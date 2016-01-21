@@ -24,7 +24,7 @@
 - **djl**: `python manage.py loaddata`
 
 ### Django Migrations ###
-- **djmkmig**: `python manage.py makemigrations`
-- **djmig**:  `python manage.py migrate`
-- **djdatamig**: `python manage.py makemigrations --empty`
+- **djmm**: `python manage.py makemigrations`
+- **djm**:  `python manage.py migrate`
+- **djme**: `python manage.py makemigrations --empty`
 
