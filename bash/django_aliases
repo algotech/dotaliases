@@ -1,0 +1,19 @@
+# Run server
+alias prs='python manage.py runserver 0.0.0.0:8000'
+
+# Run shell
+alias ds='python manage.py shell'
+
+# Run tests
+alias dt='python manage.py test'
+
+# Create super user
+alias dsu='python manage.py createsuperuser'
+
+# Load fixture
+alias dl='python manage.py loaddata'
+
+# Django Migrations
+alias mkmig='python manage.py makemigrations'
+alias mig='python manage.py migrate'
+alias datamig='python manage.py makemigrations --empty'

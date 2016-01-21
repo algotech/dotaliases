@@ -22,6 +22,7 @@ Project started with passion by [AlgoTech](http://www.algotech.solutions)!
   - [Cordova aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/cordova_aliases.md)
   - [Bash aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/bash_aliases.md)
   - [Vim aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/vim_aliases.md)
+  - [Django aliases](doc/bash/vim_aliases.md)
 
 #### Git aliases:
   - **co**: shortcut for `checkout`
