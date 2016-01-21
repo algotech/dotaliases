@@ -12,3 +12,4 @@ source $HOME/.aliases/bash/vim_aliases
 source $HOME/.aliases/bash/symfony_aliases
 source $HOME/.aliases/bash/phpunit_aliases
 source $HOME/.aliases/bash/cordova_aliases
+source $HOME/.aliases/bash/django_aliases

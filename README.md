@@ -14,14 +14,15 @@ Project started with passion by [AlgoTech](http://www.algotech.solutions)!
 ## Aliases list
 
 #### Bash aliases by tools:
-  - [Git aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/git_aliases.md)
-  - [GitHub aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/github_aliases.md)
-  - [Composer aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/composer_aliases.md)
-  - [Symfony aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/symfony_aliases.md)
-  - [PHPUnit aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/phpunit_aliases.md)
-  - [Cordova aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/cordova_aliases.md)
-  - [Bash aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/bash_aliases.md)
-  - [Vim aliases](https://github.com/algotech/dotaliases/blob/master/doc/bash/vim_aliases.md)
+  - [Git aliases](doc/bash/git_aliases.md)
+  - [GitHub aliases](doc/bash/github_aliases.md)
+  - [Composer aliases](doc/bash/composer_aliases.md)
+  - [Symfony aliases](doc/bash/symfony_aliases.md)
+  - [PHPUnit aliases](doc/bash/phpunit_aliases.md)
+  - [Cordova aliases](doc/bash/cordova_aliases.md)
+  - [Bash aliases](doc/bash/bash_aliases.md)
+  - [Vim aliases](doc/bash/vim_aliases.md)
+  - [Django aliases](doc/bash/django_aliases.md)
 
 #### Git aliases:
   - **co**: shortcut for `checkout`
