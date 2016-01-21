@@ -1,19 +1,19 @@
 # Run server
-alias prs='python manage.py runserver 0.0.0.0:8000'
+alias djrs='python manage.py runserver 0.0.0.0:8000'
 
 # Run shell
-alias ds='python manage.py shell'
+alias djs='python manage.py shell'
 
 # Run tests
-alias dt='python manage.py test'
+alias djt='python manage.py test'
 
 # Create super user
-alias dsu='python manage.py createsuperuser'
+alias djsu='python manage.py createsuperuser'
 
 # Load fixture
-alias dl='python manage.py loaddata'
+alias djl='python manage.py loaddata'
 
 # Django Migrations
-alias mkmig='python manage.py makemigrations'
-alias mig='python manage.py migrate'
-alias datamig='python manage.py makemigrations --empty'
+alias djmkmig='python manage.py makemigrations'
+alias djmig='python manage.py migrate'
+alias djdatamig='python manage.py makemigrations --empty'
