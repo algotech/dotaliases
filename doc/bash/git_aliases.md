@@ -42,6 +42,9 @@
 - **gprod**: `git pull --rebase origin develop`
 - **gprom**: `git pull --rebase origin master`
 - **gpros**: `git pull --rebase origin staging`
+- **gprud**: `git pull --rebase upstream develop`
+- **gprum**: `git pull --rebase upstream master`
+- **gprus**: `git pull --rebase upstream staging`
 
 ### Git push ###
 - **gpod**: `git push origin develop`
