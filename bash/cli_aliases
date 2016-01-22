@@ -1,2 +1,5 @@
 # Smart ls alias
 alias l='ls -lah'
+
+# MacVim alias
+alias m='mvim .'
