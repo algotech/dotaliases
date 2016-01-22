@@ -6,11 +6,10 @@ command_exists () {
 
 ALIASES_HOME=$HOME
 
-source $ALIASES_HOME/.aliases/bash/bash_aliases
+source $ALIASES_HOME/.aliases/bash/cli_aliases
 source $ALIASES_HOME/.aliases/bash/git_aliases
 source $ALIASES_HOME/.aliases/bash/github_aliases
 source $ALIASES_HOME/.aliases/bash/composer_aliases
-source $ALIASES_HOME/.aliases/bash/vim_aliases
 source $ALIASES_HOME/.aliases/bash/symfony_aliases
 source $ALIASES_HOME/.aliases/bash/phpunit_aliases
 source $ALIASES_HOME/.aliases/bash/cordova_aliases
