@@ -54,3 +54,10 @@ Enable git aliases: add to `~/.gitconfig`
 [include]
     path = ~/.aliases/git_aliases
 ```
+
+## Using with vagrant
+- clone the repository to a folder of your choice
+- copy `.aliases` to vagrant shared folders (do not forget to add it to `.gitignore` as well)
+- edit `bash_aliases` and replace the line `ALIASES_HOME=$HOME` with your path in vagrant,
+e.g. `ALIASES_HOME='/vagrant'`
+- `source` bash_aliases from its location whenever you ssh into the vagrant box
