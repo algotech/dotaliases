@@ -5,8 +5,8 @@
 - [Back to main page](../../README.md)
 
 ### Composer ###
-- **c**: `composer`
+- **co**: `composer`
 
 ### Composer install and update ###
-- **ci**: `composer install`
-- **cu**: `composer update`
+- **coi**: `composer install`
+- **cou**: `composer update`

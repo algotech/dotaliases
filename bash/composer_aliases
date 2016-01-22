@@ -1,6 +1,6 @@
 # Composer alias
-alias c='composer'
+alias co='composer'
 
 # Composer install and update aliases
-alias ci='composer install'
-alias cu='composer update'
+alias coi='composer install'
+alias cou='composer update'
