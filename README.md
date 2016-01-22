@@ -20,8 +20,7 @@ Project started with passion by [AlgoTech](http://www.algotech.solutions)!
   - [Symfony aliases](doc/bash/symfony_aliases.md)
   - [PHPUnit aliases](doc/bash/phpunit_aliases.md)
   - [Cordova aliases](doc/bash/cordova_aliases.md)
-  - [Bash aliases](doc/bash/bash_aliases.md)
-  - [Vim aliases](doc/bash/vim_aliases.md)
+  - [CLI aliases](doc/bash/cli_aliases.md)
   - [Django aliases](doc/bash/django_aliases.md)
 
 #### Git aliases:
