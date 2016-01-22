@@ -30,6 +30,11 @@ alias gprod='git pull --rebase origin develop'
 alias gprom='git pull --rebase origin master'
 alias gpros='git pull --rebase origin staging'
 
+# Git pull from upstream aliases
+alias gprud='git pull --rebase upstream develop'
+alias gprum='git pull --rebase upstream master'
+alias gprus='git pull --rebase upstream staging'
+
 # Git push to origin aliases
 alias gpod='git push origin develop'
 alias gpom='git push origin master'
