@@ -6,7 +6,7 @@ alias ga='git add'
 alias gr='git rm'
 
 # Git branch alias
-alias gb='git branch'
+alias gb='git branch -v'
 
 # Git commit aliases
 alias gc='git commit'
