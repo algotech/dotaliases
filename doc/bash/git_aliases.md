@@ -21,7 +21,7 @@
 - **gr**: `git rm`
 
 ### Git branch ###
-- **gb**: `git branch`
+- **gb**: `git branch -v`
 
 ### Git commit ###
 - **gc**: `git commit`
