@@ -24,11 +24,7 @@ Project started with passion by [AlgoTech](http://www.algotech.solutions)!
   - [Django aliases](doc/bash/django_aliases.md)
 
 #### Git aliases:
-  - **co**: shortcut for `checkout`
-  - **graph**: a nice tree with all the commits and their parents
-  - **hist**: a compact list of commits from the current branch
-  - **restore**: shortcut for `checkout --`
-  - **unstage**: shortcut for `reset HEAD --`
+  - You can find the documentation for git aliases [here](doc/git/git_aliases.md)
 
 ## Installation
 
