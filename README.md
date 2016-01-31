@@ -44,12 +44,6 @@ Enable bash aliases in the current opened terminal by running the command:
 source ~/.aliases/bash_aliases
 ```
 
-Enable git aliases: add to `~/.gitconfig`
-```bash
-[include]
-    path = ~/.aliases/git_aliases
-```
-
 ## Using with vagrant
 - clone the repository to a folder of your choice
 - copy `.aliases` to vagrant shared folders (do not forget to add it to `.gitignore` as well)
