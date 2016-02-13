@@ -9,7 +9,7 @@ get hardcoded into muscle memory.
 This is an easy to [install](#installation) project that contains a growing list
 of aliases for different frameworks and tools that works on any `*nix` system.
 
-Project started with passion by [AlgoTech](http://www.algotech.solutions)!
+Project started with passion by [AlgoTech](https://www.algotech.solutions)!
 
 ## Aliases list
 
