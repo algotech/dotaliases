@@ -1,0 +1,28 @@
+# Ruby on Rails generators
+alias rrg=‘rails generate’
+alias rrga=‘rails g assets’
+alias rrgc=‘rails g controller’
+alias rrgd=‘rails g decorator’
+alias rrgg='rails g generator’
+alias rrgh=‘rails g helper’
+alias rrgma=‘rails g mailer’
+alias rrgmi=‘rails g migration’
+alias rrgmo=‘rails g model’
+alias rrgt=‘rails g task’
+
+# Ruby on Rails commands
+alias rra=‘rails application’
+alias rrc=’rails console’
+alias rrd=‘rails destroy’
+alias rrn=‘rails new’
+alias rrpr=‘rails profiler’
+alias rrpl=‘rails plugin’
+alias rrs=‘rails server’
+
+# Ruby on Rails database tasks
+alias rdc=‘rake db:create’
+alias rdd=‘rake db:drop’
+alias rdm=‘rake db:migrate;
+alias rdr=‘rake db:reset’
+alias rds=‘rake db:seed’
+alias rdsu=‘rake db:setup’
