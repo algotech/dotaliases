@@ -14,3 +14,4 @@ source $ALIASES_HOME/.aliases/bash/symfony_aliases
 source $ALIASES_HOME/.aliases/bash/phpunit_aliases
 source $ALIASES_HOME/.aliases/bash/cordova_aliases
 source $ALIASES_HOME/.aliases/bash/django_aliases
+source $ALIASES_HOME/.aliases/bash/ruby_on_rails_aliases

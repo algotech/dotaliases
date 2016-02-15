@@ -1,0 +1,51 @@
+# Ruby on Rails generators
+alias rrg=‘rails generate’
+alias rrga=‘rails g assets’
+alias rrgc=‘rails g controller’
+alias rrgd=‘rails g decorator’
+alias rrgg='rails g generator’
+alias rrgh=‘rails g helper’
+alias rrgirc=‘rails g inherited_resources_controller’
+alias rrgit=‘rails g integration_test’
+alias rrgma=‘rails g mailer’
+alias rrgmi=‘rails g migration’
+alias rrgmo=‘rails g model’
+alias rrgo=‘rails g observer’
+alias rrgpt=‘rails g performance_test’
+alias rrgr=‘rails g resource’
+alias rrgrc=‘rails g responders_controller’
+alias rrgc=‘rails g scaffold’
+alias rrgsc=‘rails g scaffold_controller’
+alias rrgsm=‘rails g session_migration’
+alias rrgspc=‘rails g strong_parameters_controller’
+alias rrgt=‘rails g task’
+
+# Ruby on Rails commands
+alias rrc=’rails console’
+alias rrs=‘rails server’
+alias rrdc=‘rails dbconsole’
+alias rrn=‘rails new’
+alias rra=‘rails application’
+alias rrd=‘rails destroy’
+alias rrb=‘rails benchmarker’
+alias rrpr=‘rails profiler’
+alias rrpl=‘rails plugin’
+alias rrr=‘rails runner’
+
+# Ruby on Rails database tasks
+alias rkdbc=‘rake db:create’
+alias rkdbca=‘rake db:create:all’
+alias rkdbd=‘rake db:drop’
+alias rkdbda=‘rake db:drop:all’
+alias rkdbm=‘rake db:migrate;
+alias rkdbmu=‘rake db:migrate:up’
+alias rkdbmd=‘rake db:migrate:down’
+alias rkdbms=‘rake db:migrate:status’
+alias rkdbr=‘rake db:rollback’
+alias rkdbf=‘rake db:forward’
+alias rkdbs=‘rake db:seed’
+alias rkdbsl=‘rake db:schema:load’
+alias rkdbsd=‘rake db:schema:dump’
+alias rkdbsu=‘rake db:setup’
+alias rkdbrs=‘rake db:reset’
+alias rkdbmr=‘rake db:migrate:redo’
