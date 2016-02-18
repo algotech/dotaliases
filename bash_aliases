@@ -15,3 +15,4 @@ source $ALIASES_HOME/.aliases/bash/phpunit_aliases
 source $ALIASES_HOME/.aliases/bash/cordova_aliases
 source $ALIASES_HOME/.aliases/bash/django_aliases
 source $ALIASES_HOME/.aliases/bash/npm_aliases
+source $ALIASES_HOME/.aliases/bash/loopback_aliases
