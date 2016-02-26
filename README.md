@@ -22,6 +22,7 @@ Project started with passion by [AlgoTech](https://www.algotech.solutions)!
   - [Cordova aliases](doc/bash/cordova_aliases.md)
   - [CLI aliases](doc/bash/cli_aliases.md)
   - [Django aliases](doc/bash/django_aliases.md)
+  - [Npm aliases](doc/bash/npm_aliases.md)
 
 #### Git aliases:
   - You can find the documentation for git aliases [here](doc/git/git_aliases.md)
