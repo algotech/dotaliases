@@ -6,13 +6,13 @@
 - [Back to main page](../../README.md)
 
 ### Cordova build ###
-- **cba**: `cordova build android`
-- **cbi**: `cordova build ios`
+- **coba**: `cordova build android`
+- **cobi**: `cordova build ios`
 
 ### Cordova emulate ###
-- **cea**: `cordova emulate android`
-- **cei**: `cordova emulate ios`
+- **coea**: `cordova emulate android`
+- **coei**: `cordova emulate ios`
 
 ### Cordova run ###
-- **cra**: `cordova run android --device`
-- **cri**: `cordova run ios --device`
+- **cora**: `cordova run android --device`
+- **cori**: `cordova run ios --device`
