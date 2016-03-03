@@ -1,0 +1,28 @@
+# Loopback alias
+alias lb='slc loopback'
+
+# Loopback datasource alias
+alias lbd='slc loopback:datasource'
+
+# Loopback model and property aliases
+alias lbm='slc loopback:model'
+alias lbp='slc loopback:property'
+
+# Loopback acl and relation aliases
+alias lba='slc loopback:acl'
+alias lbr='slc loopback:relation'
+
+# Loopback remote-method alias
+alias lbrm='slc loopback:remote-method'
+
+# Loopback middleware alias
+alias lbmd='slc loopback:middleware'
+
+# Loopback boot-script alias
+alias lbbs='slc loopback:boot-script'
+
+# Loopback export-api-def alias
+alias lbead='slc loopback:export-api-def'
+
+# Loopback swagger alias
+alias lbs='slc loopback:swagger'
