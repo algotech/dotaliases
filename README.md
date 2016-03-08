@@ -24,6 +24,7 @@ Project started with passion by [AlgoTech](https://www.algotech.solutions)!
   - [Django aliases](doc/bash/django_aliases.md)
   - [Npm aliases](doc/bash/npm_aliases.md)
   - [Loopback aliases](doc/bash/loopback_aliases.md)
+  - [Gulp aliases](doc/bash/gulp_aliases.md)
 
 #### Git aliases:
   - You can find the documentation for git aliases [here](doc/git/git_aliases.md)
