@@ -1,5 +1,17 @@
 # Smart ls alias
 alias l='ls -lah'
 
+# Make and change directory at once
+alias mkcd='_(){ mkdir -p $1; cd $1; }; _'
+
+# fast find
+alias ff='find . -name $1'
+
+# change directories easily
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+
 # MacVim alias
 alias m='mvim .'
