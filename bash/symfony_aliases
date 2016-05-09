@@ -27,7 +27,21 @@ alias sfaw='php app/console assetic:watch'
 # Symfony assets alias
 alias sfai='php app/console assets:install web --symlink'
 
-# Symfony server alias
+# Symfony server aliases
 alias sfsr='php app/console server:run'
 alias sfss='php app/console server:status'
 alias sfsq='php app/console server:stop'
+
+# Doctrine aliases
+alias docdbcreate='doctrine:database:create'
+alias docdbdrop='doctrine:database:drop'
+alias docfixload='doctrine:fixtures:load'
+alias docgen='doctrine:generate:entities'
+alias docmigd='doctrine:migrations:diff'
+alias docmigx='doctrine:migrations:execute'
+alias docmigm='doctrine:migrations:migrate'
+alias docmigs='doctrine:migrations:status'
+alias docschc='doctrine:schema:create'
+alias docschd='doctrine:schema:drop'
+alias docschu='doctrine:schema:update'
+alias docschv='doctrine:schema:validate'

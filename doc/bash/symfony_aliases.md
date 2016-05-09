@@ -43,3 +43,17 @@
 - **sfsr**: `php app/console server:run`
 - **sfss**: `php app/console server:status`
 - **sfsq**: `php app/console server:stop`
+
+### Doctrine ###
+docdbcreate=`doctrine:database:create`
+docdbdrop=`doctrine:database:drop`
+docfixload=`doctrine:fixtures:load`
+docgen=`doctrine:generate:entities`
+docmigd=`doctrine:migrations:diff`
+docmigx=`doctrine:migrations:execute`
+docmigm=`doctrine:migrations:migrate`
+docmigs=`doctrine:migrations:status`
+docschc=`doctrine:schema:create`
+docschd=`doctrine:schema:drop`
+docschu=`doctrine:schema:update`
+docschv=`doctrine:schema:validate`
