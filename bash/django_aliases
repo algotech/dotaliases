@@ -17,3 +17,6 @@ alias djl='python manage.py loaddata'
 alias djmm='python manage.py makemigrations'
 alias djm='python manage.py migrate'
 alias djmme='python manage.py makemigrations --empty'
+
+# Django Static resources
+alias djcs='python manage.py collectstatic'

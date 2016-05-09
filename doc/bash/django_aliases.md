@@ -28,3 +28,5 @@
 - **djm**:  `python manage.py migrate`
 - **djme**: `python manage.py makemigrations --empty`
 
+### Django Static Resources
+- **djcs**: `python manage.py collectstatic`
