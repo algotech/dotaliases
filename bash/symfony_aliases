@@ -28,4 +28,6 @@ alias sfaw='php app/console assetic:watch'
 alias sfai='php app/console assets:install web --symlink'
 
 # Symfony server alias
-alias sfs='php app/console server:run'
+alias sfsr='php app/console server:run'
+alias sfss='php app/console server:status'
+alias sfsq='php app/console server:stop'

@@ -40,4 +40,6 @@
 - **sfai**: `php app/console assets:install web --symlink`
 
 ### Symfony server ###
-- **sfs**: `php app/console se:ru`
+- **sfsr**: `php app/console server:run`
+- **sfss**: `php app/console server:status`
+- **sfsq**: `php app/console server:stop`
