@@ -13,5 +13,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+# apt get
+alias apt-get='sudo apt-get'
+
 # MacVim alias
 alias m='mvim .'
