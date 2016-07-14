@@ -45,15 +45,15 @@
 - **sfsq**: `php app/console server:stop`
 
 ### Doctrine ###
-docdbcreate=`doctrine:database:create`
-docdbdrop=`doctrine:database:drop`
-docfixload=`doctrine:fixtures:load`
-docgen=`doctrine:generate:entities`
-docmigd=`doctrine:migrations:diff`
-docmigx=`doctrine:migrations:execute`
-docmigm=`doctrine:migrations:migrate`
-docmigs=`doctrine:migrations:status`
-docschc=`doctrine:schema:create`
-docschd=`doctrine:schema:drop`
-docschu=`doctrine:schema:update`
-docschv=`doctrine:schema:validate`
+- **dodbcreate**: `php app/console doctrine:database:create`
+- **dodbdrop**: `php app/console doctrine:database:drop`
+- **dofixload**: `php app/console doctrine:fixtures:load`
+- **dogen**: `php app/console doctrine:generate:entities`
+- **domigd**: `php app/console doctrine:migrations:diff`
+- **domigx**: `php app/console doctrine:migrations:execute`
+- **domigm**: `php app/console doctrine:migrations:migrate`
+- **domigs**: `php app/console doctrine:migrations:status`
+- **doschc**: `php app/console doctrine:schema:create`
+- **doschd**: `php app/console doctrine:schema:drop`
+- **doschu**: `php app/console doctrine:schema:update`
+- **doschv**: `php app/console doctrine:schema:validate`
