@@ -65,7 +65,7 @@ function extract() {
 		unzip "$1" -d "$DESTDIR"
 		;;
 	  lzma)
-	  	echo -e "Extracting $1" to $DESTDIR: (lzma compressed file)"
+	  	echo -e "Extracting $1" : (lzma compressed file)"
 		unlzma "$1"
 		;;
 	  rar)
