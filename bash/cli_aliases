@@ -77,7 +77,7 @@ function extract() {
 		7za e "$1" -o "$DESTDIR"
 		;;
 	  xz)
-	  	echo -e  "Extracting $1 to $.: (xz compressed file)"
+	  	echo -e  "Extracting $1 : (xz compressed file)"
 	    unxz  "$1"
 	  	;;
 	  exe)
