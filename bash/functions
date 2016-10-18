@@ -1,0 +1,10 @@
+delete_branches_except() {
+    cmd='git branch'
+
+    for i in $*; do
+       cmd=$cmd' | grep -v "'$i'"'
+     done
+
+    cmd=$cmd' | xargs git branch -D'
+    eval $cmd
+}
