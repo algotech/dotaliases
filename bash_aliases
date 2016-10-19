@@ -6,6 +6,7 @@ command_exists () {
 
 ALIASES_HOME=$HOME
 
+source $ALIASES_HOME/.aliases/bash/apache_aliases
 source $ALIASES_HOME/.aliases/bash/cli_aliases
 source $ALIASES_HOME/.aliases/bash/git_aliases
 source $ALIASES_HOME/.aliases/bash/github_aliases

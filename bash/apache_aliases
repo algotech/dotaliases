@@ -1,0 +1,8 @@
+# Start Apache Server
+alias apsta='sudo service apache2 start'
+
+# Stop Apache Server
+alias apsto='sudo service apache2 stop'
+
+# Restart Apache Server
+alias apres='sudo service apache2 restart'
