@@ -46,7 +46,8 @@ alias gpum='git push upstream master'
 alias gpus='git push upstream staging'
 
 # Git push with the --force-with-lease option
-alias gpflo='git push --force-with-lease origin'
+alias gpofl='git push --force-with-lease origin'
+alias gpufl='git push --force-with-lease upstream'
 
 # Git rebase aliases
 alias gra='git rebase --abort'
