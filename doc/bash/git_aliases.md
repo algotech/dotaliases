@@ -53,6 +53,8 @@
 - **gpud**: `git push upstream develop`
 - **gpum**: `git push upstream master`
 - **gpus**: `git push upstream staging`
+- **gpofl**: `git push --force-with-lease origin`
+- **gpufl**: `git push --force-with-lease upstream`
 
 ### Git rebase ###
 - **gra**: `git rebase --abort`
