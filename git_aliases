@@ -1,6 +1,9 @@
 [alias]
+    amend = commit -a --amend
     co = checkout
+    cob = checkout -b
     graph = log --color --graph --pretty=format:\"%h | %ad | %an | %s%d\" --date=short
     hist = log --color --pretty=format:\"%C(yellow)%h%C(reset) %s%C(bold red)%d%C(reset) %C(green)%ad%C(reset) %C(blue)[%an]%C(reset)\" --relative-date --decorate
     restore = checkout --
+    undo = reset HEAD~1 --mixed
     unstage = reset HEAD --
