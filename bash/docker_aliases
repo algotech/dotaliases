@@ -1,0 +1,401 @@
+alias drund="docker run -d -P"
+alias drun="docker run -t -i -P"
+alias dimg="di"
+alias dexec='dx'
+alias dc='docker-compose'
+
+# Build an image with the given name/tag using the Dockerfile in the
+# current directory
+function dbuild() {
+  docker build -t="$1" .;
+}
+
+#
+# Format output from the included functions.
+#
+function dockererror() {
+  unset containername;
+  # Detect whether output is piped or not.
+  if [[ -t 1 ]]; then
+    printf '%b\n' "\033[1;31m${@}\033[0m"
+  else
+    print $@
+  fi
+
+} >&2
+
+#
+# List Docker images on the local system.
+#
+function di() {
+  if [[ -z "$1" ]]; then
+    dimagelike all | sed -e $'s# #\\\n#g' | grep -v "^REPOSITORY:TAG"
+  else
+    dimagelike $1 | sed -e $'s# #\\\n#g' | grep -v "^REPOSITORY:TAG"
+  fi
+}
+
+#
+# Display Docker image tags for images in the public repo
+#
+function ditags {
+  for Repo in $* ; do
+    if [[ -z $( echo "$Repo" | grep "/" ) ]]; then
+      fullRepo="library/$Repo"
+    else
+      fullRepo="$Repo"
+    fi
+
+    curl -s -S "https://registry.hub.docker.com/v2/repositories/$fullRepo/tags/" | \
+      python -mjson.tool | \
+      sed -e 's#,#,\n#g' -e 's#\[#\[\n#g' | \
+      grep '"name"' | \
+      awk -F\" '{print $4;}' | \
+      sort -fu | \
+      sed -e "s#^#${Repo}:#"
+  done
+}
+
+# Stop one or more running containers. If none are provided, you will
+# be promped with a list of containers.
+function dstop() {
+    # if the user does not provide a container, let them pick one
+    dwhich $1
+
+    if [[ -z "$containername" ]]; then
+        dockererror "Please specify one or more containers to stop."; return 1;
+    fi
+
+    docker stop "$containername";
+}
+
+#
+# Starts a persistent tail of the logs of a running container. The last
+# 100 lines are printed to start.
+#
+function dtail() {
+  # if the user does not provide a container, let them pick one
+  dwhich $1
+
+  docker logs --tail=100 -f $containername
+}
+
+#
+# Stops, removes, and recreates one or more services defined by Docker Compose.
+# This function will traverse the directory hierarchy upward to find a
+# docker-compose.yml file if none exist in the current directory.
+#
+function dcbounce {
+  if [[ -z "$@" ]]; then
+    dc stop
+    dc rm -f
+    dc up -d
+  else
+    for i in "${@}"; do
+      dc stop "$i"
+      dc rm -f "$i"
+      dc up -d "$i"
+    done
+  fi
+}
+
+#
+# Restarts one or more named containers.
+#
+function dbounce {
+  docker restart "$@"
+}
+
+#
+# Lists all running containers. Adding the -a will will
+# stopped containers as well.
+#
+function dps() {
+  if [[ -z "$1" ]]
+  then
+    dwhich all
+  elif [ "$#" -eq 1 ] && [ "$1" == "-a" ]
+  then
+    dwhich -a all
+  else
+    dwhich "$@"
+  fi
+}
+
+# Remove one or more stopped containers. If none are provided, you will
+# be promped with a list of containers.
+function drm() {
+    # if the user does not provide a container, let them pick one
+    dwhich "$@" '-a'
+
+    if [[ -z "$containername" ]]; then
+        dockererror "Please specify one or more containers to remove."; return 1;
+    fi
+
+    docker rm "$containername";
+}
+
+# Remove one or more images. If none are provided, you will be promped
+# with a list of images. Partial matches and regex are supported.
+function drmi() {
+    # if the user does not provide an image, let them pick one
+    imagename=$(dimagelike "$@")
+    if [[ -z "$imagename" ]]; then
+        dockererror "Please specify one or more partial image names and/or versions to remove or all to remove all images"; return 1;
+    fi
+
+    docker rmi "$imagename";
+}
+
+#
+# Generic exec into a running container. If none are provided, you will be
+# promped with a list of images. Partial matches and regex are supported.
+#
+function dx() {
+    # if the user does not provide a container, let them pick one
+    dwhich "$1"
+
+    if [[ -z "$containername" ]]; then
+        dockererror "Please select a valid container to exec."; return 1;
+    # if the user does not provide a container, or argument, just run the default command
+    elif [[ -z "$1" ]]; then
+        docker exec -i -t $containername $2;
+    # pop the container name from the argument list and run the rest as the command
+    else
+        shift
+        docker exec -i -t $containername "$@";
+    fi
+}
+
+# Does a basic docker exec into a container's bash shell. If none are provided,
+# you will be promped with a list of images. Partial matches and regex are
+# supported.
+function dbash() {
+  dwhich "$1"
+
+  if [[ -z "$containername" ]]; then
+      dockererror "Please select a valid container to exec."; return 1;
+  else
+    dx "$containername" '/bin/bash';
+  fi
+}
+
+#
+# Does a basic docker exec into a container's default shell. If none are
+# provided, you will be promped with a list of images. Partial matches and
+# regex are supported.
+function dsh() {
+  dwhich "$1"
+
+  if [[ -z "$containername" ]]; then
+      dockererror "Please select a valid container to exec."; return 1;
+  else
+    dx "$containername" 'sh';
+  fi
+}
+
+# Does a basic docker exec into an alpine container's shell. If none are provided,
+# you will be promped with a list of images. Partial matches and regex are
+# supported.
+function dash() {
+  dwhich "$1"
+
+  # if the user does not provide a container, let them pick one
+  dwhich "$1"
+
+  if [[ -z "$containername" ]]; then
+      dockererror "Please select a valid container to exec."; return 1;
+  # if the user does not provide a container, or argument, just run the default command
+  elif [[ -z "$1" ]]; then
+      docker exec -i -t $containername $2;
+  # pop the container name from the argument list and run the rest as the command
+  else
+      shift
+      docker exec -i -t --entrypoint="/bin/ash" $containername "$@";
+  fi
+}
+
+#
+# Display realtime info for one or more running containers. If none
+# are provided, you will be promped with a list of images. Partial
+# matches and regex are supported.
+#
+function dstats() {
+  # if the user does not provide an image, let them pick one
+  dwhich "$@"
+
+  if [ -z "$containername" ]; then
+      dockererror "Please specify one or more containers for which to display realtime stats."; return 1;
+  fi
+
+  docker stats "$containername"
+}
+
+#
+# Removes all untagged Docker image. This is probably the handiest command
+# in this entire repo. Run this early and often to keep the zombie images
+# at bay.
+#
+function dtidy() {
+  docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
+}
+
+#
+# Full cleanup of the local Docker install. Deletes every container and
+# removes every untagged image
+#
+function dclean() {
+  docker stop $(docker ps -a -q);
+  docker rm $(docker ps -q -a);
+  docker rmi $(docker images | grep "^<none>" | awk "{print $3}");
+}
+
+# Smokes every container and every tagged image
+function dnuke() {
+  docker stop $(docker ps -a -q);
+  docker rm $(docker ps -q -a);
+  docker rmi $(docker images -q);
+}
+
+#
+# Looks up a user-supplied container name. If none is supplied, the user is
+# prompted to select from a list of containers on the current system.
+#
+function dwhich() {
+  containername=''
+  INCLUDE_STOPPED=''
+  if [[ "$#" == "0" ]]
+  then
+    # nothing to do here
+    INCLUDE_STOPPED=''
+  else
+    iter=1
+    for i in "$@"
+    do
+      if [[ '-a' == "$i" ]]
+      then
+        INCLUDE_STOPPED="-a"
+        shift
+      #else
+      #  echo -e "leaving argument $i in place\n"
+      fi
+      iter="$[iter+1]"
+    done
+  fi
+
+  containerids=( $(docker ps $INCLUDE_STOPPED | grep -v '^CONTAINER' | awk '{print $NF}') )
+  if [[ -z "$1" ]]; then
+      for i in "${!containerids[@]}"
+      do
+        echo "[$i] ${containerids[$i]}"
+      done
+
+      echo -n "Select container(s) []: "
+      eval "read containerresponse"
+      containerresponse=( $containerresponse )
+   else
+      containerresponse=( "$@" )
+   fi
+
+    re='^[0-9]+$'
+    # if empty, none was provided and none was selected
+    if [[ -z "$containerresponse" ]]; then
+        dockererror "Unknown container name. Please select a valid number from 1-${#containerids[@]} or provide a valid container name."; return 1;
+    else
+      for i in "${!containerresponse[@]}"
+      do
+        # validate the numeric selection
+        if [[ "${containerresponse[$i]}" =~ $re ]] ; then
+          if [ ${containerresponse[$i]} -ge ${#containerids[@]} ]; then
+              dockererror "Invalid choice. Please select a valid number from 1-${#containerids[@]} or provide a valid container name."; return 1;
+          else
+              containername=$(echo -e "${containerids[${containerresponse[$i]}]}\n${containername}")
+              # echo "${containername}"
+          fi
+        # return all containers
+        elif [ "all" == "${containerresponse[$i]}" ] || [ "*" == "${containerresponse[$i]}" ]; then
+          containername="${containerids[@]}"
+          #echo "${containername}"
+        # validate the provided value
+        else
+
+          containermatches=$(docker ps $INCLUDE_STOPPED | grep -v '^CONTAINER' | awk '{print $NF}' | grep "${containerresponse[$i]}")
+          if [[ -n "$containermatches" ]]; then
+            foundmatching=1
+            containername=$(echo -e "${containermatches}\n$containername")
+            #echo "${containername}"
+          else
+            dockererror "Unknown container name ${containerresponse[$i]}. Please select a valid number from 1-${#containerids[@]} or provide a valid container name."; return 1;
+          fi
+          #for i in "${!containerids[@]}"
+          #do
+          #  if [[ "$containername" == "${containerids[$i]}" ]]; then
+          #    foundmatch=1
+          #    containername="${containerids[$i]}"
+          #    break
+          #  fi
+          #done
+
+          #if [ -z "$foundmatch" ]; then
+          #  dockererror "Unknown container name. Please select a valid number from 1-${#containerids[@]} or provide a valid container name."; return 1;
+          #fi
+        fi
+      done
+
+      # print results | strip duplicates | reverse and delete empty newlines | replace spaces with newlines
+      echo "${containername}" | awk '!a[$0]++' | sed -ne '1!G;h;$p' | tr " " "\n"
+    fi
+
+    #echo "$containername"
+}
+#
+# Looks up a user-supplied image name and/or version based on partial match.
+# If none is supplied the user is prompted to select from a list of images on
+# the current system
+#
+function dimagelike() {
+    imagenames=( $(docker images | grep -v '^<none>' | awk '{print $1,":",$2; }' | sed -e 's# ##g') )
+    if [[ -z "$1" ]]; then
+      for i in "${!imagenames[@]}"
+      do
+        echo "[$i] ${imagenames[$i]}"
+      done
+
+      echo -n "Select imag(e) []: "
+      eval "read selectedimage"
+   else
+      selectedimage="$1"
+   fi
+
+    re='^[0-9]+$'
+    # if empty, none was provided and none was selected
+    if [[ -z "$selectedimage" ]]; then
+        dockererror "Please provide an image name and/or version or select a valid number from 1-${#imagenames[@]}. Partial names and wildcards are supported."; return 1;
+    # validate the numeric selection
+    elif [[ "$selectedimage" =~ $re ]] ; then
+      if [ $selectedimage -ge ${#imagenames[@]} ]; then
+          dockererror "Invalid choice. Please provide an image name and/or version or select a valid number from 1-${#imagenames[@]}. Partial names and wildcards are supported."; return 1;
+      else
+          echo "${imagenames[$selectedimage]}"
+      fi
+    # return all containers
+    elif [ "all" == "$selectedimage" ] || [ "*" == "$selectedimage" ]; then
+          echo "${imagenames[@]}"
+    # validate the provided value
+    else
+      # selectedimage=( "${selectedimage[@]}" )
+      # for j in "${#selectedimage[@]}"
+      # do
+        # match the selected value against the existing image name and tag
+        imgmatches=$(docker images | grep -v '^<none>' | awk '{print $1,":",$2; }' | sed -e 's# ##g' | grep "$selectedimage")
+        if [[ -n "$imgmatches" ]]; then
+          foundmatching=1
+          echo "${imgmatches}"
+        fi
+      # done
+
+      if [[ -z "$foundmatching" ]]; then
+        dockererror "Invalid image value. Please provide an image name and/or version or select a valid number from 1-${#imagenames[@]}. Partial names and wildcards are supported."; return 1;
+      fi
+    fi
+}
