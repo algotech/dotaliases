@@ -1,14 +1,14 @@
 # Bash aliases for Magento 2 #
 
-- [Install and Upgrade modules](#install-upgrade-module)
-- [Show Current Mode](#display-current-mode)
-- [Deploy Static Content](#static-content-deploy)
-- [DI Compile](#setup-di-compile)
+- [Install and Upgrade modules](#install-upgrade-modules)
+- [Show Current Mode](#show-current-mode)
+- [Deploy Static Content](#deploy-static-content)
+- [DI Compile](#di-compile)
 - [Reindexing](#reindexing)
 - [Cache](#cache)
-- [Cron Jobs](#magento-cron-job)
-- [Automated Test](#magento-automated-tests)
-- [All Magento 2 Commands](#display-magento-commands)
+- [Cron Jobs](#cron-jobs)
+- [Automated Test](#automated-test)
+- [All Magento Commands](#all-magento-commands)
 - [Back to main page](../../README.md)
 
 ### Install and Upgrade modules ###
@@ -40,5 +40,5 @@
 ### Automated Test ###
 - **m2dtr**: `php bin/magento dev:test:run`
 
-### All Magento 2 Commands ###
+### All Magento Commands ###
 - **m2list** : `php bin/magento --list`
