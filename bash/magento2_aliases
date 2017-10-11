@@ -2,7 +2,7 @@
 alias m2su='php bin/magento setup:upgrade'
 
 #Show current mode 
-alias m2scm="php bin/magento deploy:mode:show"
+alias m2dms="php bin/magento deploy:mode:show"
 
 #Deploy static content
 alias m2sscd="php bin/magento setup:static-content:deploy"
@@ -36,7 +36,3 @@ alias m2dtr="php bin/magento dev:test:run"
 
 #Display a list of magento commands
 alias m2list="php bin/magento --list"
-
-
-
-
