@@ -1,0 +1,38 @@
+#Install and Upgrade module
+alias m2su='php bin/magento setup:upgrade'
+
+#Show current mode 
+alias m2dms="php bin/magento deploy:mode:show"
+
+#Deploy static content
+alias m2sscd="php bin/magento setup:static-content:deploy"
+
+#DI compile
+alias m2sdc="php bin/magento setup:di:compile"
+
+#Reindex
+alias m2ir="php bin/magento indexer:reindex"
+
+#Cache 
+
+#Flush magento cache
+alias m2cf="php bin/magento cache:flush"
+
+#Clean magento cache 
+alias m2cc="php bin/magento cache:clean"
+
+#Disable full page cache and DDL cache 
+alias m2cddf="php bin/magento cache:disable db_ddl full_page"
+
+#List cache type and status 
+alias m2cs="php bin/magento cache:status"
+
+
+#Run Cron job
+alias m2cr="php bin/magento cron:run"
+
+#Run automated tests 
+alias m2dtr="php bin/magento dev:test:run"
+
+#Display a list of magento commands
+alias m2list="php bin/magento --list"
