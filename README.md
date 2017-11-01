@@ -25,6 +25,7 @@ Project started with passion by [AlgoTech](https://www.algotech.solutions)!
   - [Npm aliases](doc/bash/npm_aliases.md)
   - [Loopback aliases](doc/bash/loopback_aliases.md)
   - [Gulp aliases](doc/bash/gulp_aliases.md)
+  - [Apache aliases](doc/bash/apache_aliases.md)
   - [Useful functions](doc/bash/functions.md)
 
 #### Git aliases:
