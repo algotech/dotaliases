@@ -18,3 +18,9 @@
 - **git hist**: a compact list of commits from the current branch
 - **git restore**: shortcut for `checkout --`
 - **git unstage**: shortcut for `reset HEAD --`
+
+### Functions ###
+#### Delete branches except those specified ####
+- **delete_branches_except [args]**: deletes all git branches except for those specified as arguments.
+
+Usage example: `delete_branches_except master develop`

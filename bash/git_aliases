@@ -61,3 +61,15 @@ alias gss='git stash save'
 # Git diff and log aliases
 alias gd='git diff --color-words'
 alias gl='git log --oneline --decorate'
+
+# Useful functions
+delete_branches_except() {
+    cmd='git branch'
+
+    for i in $*; do
+       cmd=$cmd' | grep -v "'$i'"'
+     done
+
+    cmd=$cmd' | xargs git branch -D'
+    eval $cmd
+}
