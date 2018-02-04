@@ -20,9 +20,9 @@ alias rrpl=‘rails plugin’
 alias rrs=‘rails server’
 
 # Ruby on Rails database tasks
-alias rdc=‘rake db:create’
-alias rdd=‘rake db:drop’
-alias rdm=‘rake db:migrate;
-alias rdr=‘rake db:reset’
-alias rds=‘rake db:seed’
-alias rdsu=‘rake db:setup’
+alias rrdc=‘rake db:create’
+alias rrdd=‘rake db:drop’
+alias rrdm=‘rake db:migrate;
+alias rrdr=‘rake db:reset’
+alias rrds=‘rake db:seed’
+alias rrdsu=‘rake db:setup’
