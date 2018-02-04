@@ -26,9 +26,9 @@
 - **rrs**: ‘rails server’
 
 ### Ruby on Rails database tasks ###
-- **rkdbc**: ‘rake db:create’
-- **rkdbd**: ‘rake db:drop’
-- **rkdbm**: ‘rake db:migrate;
-- **rkdbrs**: ‘rake db:reset’
-- **rkdbs**: ‘rake db:seed’
-- **rkdbsu**: ‘rake db:setup’
+- **rrdc**: ‘rake db:create’
+- **rrdd**: ‘rake db:drop’
+- **rrdm**: ‘rake db:migrate;
+- **rrdr**: ‘rake db:reset’
+- **rrds**: ‘rake db:seed’
+- **rrdsu**: ‘rake db:setup’
