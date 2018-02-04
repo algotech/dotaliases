@@ -26,6 +26,7 @@ Project started with passion by [AlgoTech](https://www.algotech.solutions)!
   - [Loopback aliases](doc/bash/loopback_aliases.md)
   - [Gulp aliases](doc/bash/gulp_aliases.md)
   - [Apache aliases](doc/bash/apache_aliases.md)
+  - [Docker aliases](doc/bash/docker_aliases.md)
 
 #### Git aliases:
   - You can find the documentation for git aliases [here](doc/git/git_aliases.md)
