@@ -40,4 +40,20 @@
 - **sfai**: `php app/console assets:install web --symlink`
 
 ### Symfony server ###
-- **sfs**: `php app/console se:ru`
+- **sfsr**: `php app/console server:run`
+- **sfss**: `php app/console server:status`
+- **sfsq**: `php app/console server:stop`
+
+### Doctrine ###
+- **dodbcreate**: `php app/console doctrine:database:create`
+- **dodbdrop**: `php app/console doctrine:database:drop`
+- **dofixload**: `php app/console doctrine:fixtures:load`
+- **dogen**: `php app/console doctrine:generate:entities`
+- **domigd**: `php app/console doctrine:migrations:diff`
+- **domigx**: `php app/console doctrine:migrations:execute`
+- **domigm**: `php app/console doctrine:migrations:migrate`
+- **domigs**: `php app/console doctrine:migrations:status`
+- **doschc**: `php app/console doctrine:schema:create`
+- **doschd**: `php app/console doctrine:schema:drop`
+- **doschu**: `php app/console doctrine:schema:update`
+- **doschv**: `php app/console doctrine:schema:validate`

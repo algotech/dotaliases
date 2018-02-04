@@ -6,6 +6,7 @@
 - [Create superuser](#create-superuser)
 - [Load fixture](#load-fixture)
 - [Django Migrations](#django-migrations)
+- [Django Static Resources](#django-static-resources)
 - [Back to main page](../../README.md)
 
 ### Run Django server ###
@@ -28,3 +29,5 @@
 - **djm**:  `python manage.py migrate`
 - **djme**: `python manage.py makemigrations --empty`
 
+### Django Static Resources
+- **djcs**: `python manage.py collectstatic`
