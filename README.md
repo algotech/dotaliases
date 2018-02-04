@@ -13,23 +13,33 @@ Project started with passion by [AlgoTech](https://www.algotech.solutions)!
 
 ## Aliases list
 
-#### Bash aliases by tools:
+### Bash aliases
+
+#### Tools:
   - [Git aliases](doc/bash/git_aliases.md)
   - [GitHub aliases](doc/bash/github_aliases.md)
-  - [Composer aliases](doc/bash/composer_aliases.md)
-  - [Symfony aliases](doc/bash/symfony_aliases.md)
-  - [PHPUnit aliases](doc/bash/phpunit_aliases.md)
-  - [Cordova aliases](doc/bash/cordova_aliases.md)
-  - [CLI aliases](doc/bash/cli_aliases.md)
-  - [Django aliases](doc/bash/django_aliases.md)
-  - [Npm aliases](doc/bash/npm_aliases.md)
-  - [Loopback aliases](doc/bash/loopback_aliases.md)
-  - [Gulp aliases](doc/bash/gulp_aliases.md)
-  - [Ruby on Rails aliases](doc/bash/ruby_on_rails_aliases.md)
   - [Apache aliases](doc/bash/apache_aliases.md)
+  - [CLI aliases](doc/bash/cli_aliases.md)
 
-#### Git aliases:
-  - You can find the documentation for git aliases [here](doc/git/git_aliases.md)
+#### PHP:
+  - [Composer aliases](doc/bash/composer_aliases.md)
+  - [PHPUnit aliases](doc/bash/phpunit_aliases.md)
+  - [Symfony aliases](doc/bash/symfony_aliases.md)
+
+#### JavaScript:
+  - [Npm aliases](doc/bash/npm_aliases.md)
+  - [Gulp aliases](doc/bash/gulp_aliases.md)
+  - [Loopback aliases](doc/bash/loopback_aliases.md)
+  - [Cordova aliases](doc/bash/cordova_aliases.md)
+
+#### Python:
+  - [Django aliases](doc/bash/django_aliases.md)
+
+#### Ruby:
+  - [Ruby on Rails aliases](doc/bash/ruby_on_rails_aliases.md)
+
+### Git aliases:
+  - You can find the documentation for git aliases [here](doc/git/git_aliases.md). Those are different than the above described bash aliases.
 
 ## Installation
 
