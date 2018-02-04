@@ -18,3 +18,4 @@ source $ALIASES_HOME/.aliases/bash/django_aliases
 source $ALIASES_HOME/.aliases/bash/npm_aliases
 source $ALIASES_HOME/.aliases/bash/loopback_aliases
 source $ALIASES_HOME/.aliases/bash/gulp_aliases
+source $ALIASES_HOME/.aliases/bash/ruby_on_rails_aliases

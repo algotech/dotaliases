@@ -25,6 +25,7 @@ Project started with passion by [AlgoTech](https://www.algotech.solutions)!
   - [Npm aliases](doc/bash/npm_aliases.md)
   - [Loopback aliases](doc/bash/loopback_aliases.md)
   - [Gulp aliases](doc/bash/gulp_aliases.md)
+  - [Ruby on Rails aliases](doc/bash/ruby_on_rails_aliases.md)
   - [Apache aliases](doc/bash/apache_aliases.md)
 
 #### Git aliases:
