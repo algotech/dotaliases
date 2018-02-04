@@ -3,13 +3,14 @@
 
 If you use the terminal on a daily basis, you'll eventually find yourself
 wanting aliases for your most commonly-used commands. It's incredibly useful to
-be able to execute your commands with only a few keystrokes that eventually
+be able to execute your commands with only a few keystrokes that ultimately
 get hardcoded into muscle memory.
 
-This is an easy to [install](#installation) project that contains a growing list
-of aliases for different frameworks and tools that works on any `*nix` system.
+This repository is an easy to install project that contains a growing list
+of aliases for different frameworks and tools that works on any *nix system.
 
-Project started with passion by [AlgoTech](https://www.algotech.solutions)!
+The project was started with passion by the
+[Algotech Software Engineering Team](https://www.algotech.solutions).
 
 ## Aliases list
 
