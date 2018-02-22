@@ -22,6 +22,8 @@
 
 ### Git branch ###
 - **gb**: `git branch -v`
+- **gba**: Shows the `git branch`es list sorted by the last commit time in _ascending_ order
+- **gbd**: Shows the `git branch`es list sorted by the last commit time in _descending_ order
 
 ### Git commit ###
 - **gc**: `git commit`
