@@ -20,5 +20,5 @@ for FILE_PREFIX in  apache \
                     gulp \
                     ruby_on_rails
 do
-  source $ALIASES_HOME/sandbox/dotaliases/bash/${FILE_PREFIX}_aliases
+  source $ALIASES_HOME/.aliases/bash/${FILE_PREFIX}_aliases
 done
