@@ -18,7 +18,8 @@ for FILE_PREFIX in  apache \
                     npm \
                     loopback \
                     gulp \
-                    ruby_on_rails
+                    ruby_on_rails \
+                    yarn
 do
   source $ALIASES_HOME/.aliases/bash/${FILE_PREFIX}_aliases
 done

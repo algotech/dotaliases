@@ -1,0 +1,23 @@
+# Yarn
+alias y='yarn'
+
+# Yarn run
+alias yr='yarn run'
+alias yrs='yarn run start'
+alias yrt='yarn run test'
+alias yrb='yarn run build'
+
+# Yarn add/remove
+alias ya='yarn add'
+alias yrm='yarn remove'
+
+# Yarn upgrade
+alias yu='yarn upgrade'
+alias yul='yarn upgrade --latest'
+alias yui='yarn upgrade-interactive'
+alias yuil='yarn upgrade-interactive --latest'
+
+# Yarn global
+alias yga='yarn global add'
+alias ygrm='yarn global remove'
+alias ygul='yarn global upgrade --latest'
