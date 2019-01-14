@@ -2,7 +2,7 @@
 
 - [Yarn](#yarn)
 - [Yarn run](#yarn-run)
-- [Yarn add/remove](#yarn-add-remove)
+- [Yarn add/remove](#yarn-addremove)
 - [Yarn upgrade](#yarn-upgrade)
 - [Yarn global](#yarn-global)
 - [Back to main page](../../README.md)
