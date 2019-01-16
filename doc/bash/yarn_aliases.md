@@ -8,26 +8,26 @@
 - [Back to main page](../../README.md)
 
 ### Yarn ###
-- **y**: `yarn`
+- **ya**: `yarn`
 
 ### Yarn run ###
-- **yr**: `yarn run`
-- **yrs**: `yarn run start`
-- **yrt**: `yarn run test`
-- **yrb**: `yarn run build`
+- **yar**: `yarn run`
+- **yars**: `yarn run start`
+- **yart**: `yarn run test`
+- **yarb**: `yarn run build`
 
 ### Yarn add/remove ###
-- **ya**: `yarn add`
-- **yrm**: `yarn remove`
+- **yaa**: `yarn add`
+- **yarm**: `yarn remove`
 
 ### Yarn upgrade ###
-- **yu**: `yarn upgrade`
-- **yul**: `yarn upgrade --latest`
-- **yui**: `yarn upgrade-interactive`
-- **yuil**: `yarn upgrade-interactive --latest`
+- **yau**: `yarn upgrade`
+- **yaul**: `yarn upgrade --latest`
+- **yaui**: `yarn upgrade-interactive`
+- **yauil**: `yarn upgrade-interactive --latest`
 
 ### Yarn global ###
-- **yga**: `yarn global add`
-- **ygrm**: `yarn global remove`
-- **ygul**: `yarn global upgrade --latest`
+- **yaga**: `yarn global add`
+- **yagrm**: `yarn global remove`
+- **yagul**: `yarn global upgrade --latest`
 
