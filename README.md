@@ -29,6 +29,7 @@ The project was started with passion by the
 
 #### JavaScript:
   - [Npm aliases](doc/bash/npm_aliases.md) - package manager for the JavaScript programming language
+  - [Yarn aliases](doc/bash/yarn_aliases.md) - package manager for the JavaScript programming language
   - [Gulp aliases](doc/bash/gulp_aliases.md) - toolkit for automating painful or time-consuming tasks
   - [Loopback aliases](doc/bash/loopback_aliases.md) - highly-extensible, open-source Node.js framework
   - [Cordova aliases](doc/bash/cordova_aliases.md) - cross-platform mobile application development
