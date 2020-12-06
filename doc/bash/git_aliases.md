@@ -1,4 +1,7 @@
 # Bash aliases for git #
+These aliases assume that the main git branch is called `main`, per GitHub's standards starting October 2020. If you would like too keep legacy naming, or have a different name for your branch, set the GIT_MAIN_BRANCH environment variable at any point.
+
+E.g. `export GIT_MAIN_BRANCH=master`.
 
 - [Git status](#git-status)
 - [Git add and remove](#git-add-and-remove)
@@ -32,7 +35,7 @@
 
 ### Git checkout ###
 - **gcod**: `git checkout develop`
-- **gcom**: `git checkout master`
+- **gcom**: `git checkout ${GIT_MAIN_BRANCH-main}`
 - **gcos**: `git checkout staging`
 
 ### Git fetch ###
@@ -42,18 +45,18 @@
 ### Git pull ###
 - **gp**: `git pull --rebase`
 - **gprod**: `git pull --rebase origin develop`
-- **gprom**: `git pull --rebase origin master`
+- **gprom**: `git pull --rebase origin ${GIT_MAIN_BRANCH-main}`
 - **gpros**: `git pull --rebase origin staging`
 - **gprud**: `git pull --rebase upstream develop`
-- **gprum**: `git pull --rebase upstream master`
+- **gprum**: `git pull --rebase upstream ${GIT_MAIN_BRANCH-main}`
 - **gprus**: `git pull --rebase upstream staging`
 
 ### Git push ###
 - **gpod**: `git push origin develop`
-- **gpom**: `git push origin master`
+- **gpom**: `git push origin ${GIT_MAIN_BRANCH-main}`
 - **gpos**: `git push origin staging`
 - **gpud**: `git push upstream develop`
-- **gpum**: `git push upstream master`
+- **gpum**: `git push upstream ${GIT_MAIN_BRANCH-main}`
 - **gpus**: `git push upstream staging`
 - **gpofl**: `git push --force-with-lease origin`
 - **gpufl**: `git push --force-with-lease upstream`
@@ -63,7 +66,7 @@
 - **grc**: `git rebase --continue`
 - **grd**: `git rebase develop`
 - **gri**: `git rebase -i`
-- **grm**: `git rebase master`
+- **grm**: `git rebase ${GIT_MAIN_BRANCH-main}`
 - **grs**: `git rebase staging`
 
 ### Git stash ###

@@ -17,7 +17,7 @@ alias gcm='git commit -m'
 
 # Git checkout aliases
 alias gcod='git checkout develop'
-alias gcom='git checkout master'
+alias gcom='git checkout ${GIT_MAIN_BRANCH-main}'
 alias gcos='git checkout staging'
 
 # Git fetch aliases
@@ -29,22 +29,22 @@ alias gp='git pull --rebase'
 
 # Git pull from origin aliases
 alias gprod='git pull --rebase origin develop'
-alias gprom='git pull --rebase origin master'
+alias gprom='git pull --rebase origin ${GIT_MAIN_BRANCH-main}'
 alias gpros='git pull --rebase origin staging'
 
 # Git pull from upstream aliases
 alias gprud='git pull --rebase upstream develop'
-alias gprum='git pull --rebase upstream master'
+alias gprum='git pull --rebase upstream ${GIT_MAIN_BRANCH-main}'
 alias gprus='git pull --rebase upstream staging'
 
 # Git push to origin aliases
 alias gpod='git push origin develop'
-alias gpom='git push origin master'
+alias gpom='git push origin ${GIT_MAIN_BRANCH-main}'
 alias gpos='git push origin staging'
 
 # Git push to upstream aliases
 alias gpud='git push upstream develop'
-alias gpum='git push upstream master'
+alias gpum='git push upstream ${GIT_MAIN_BRANCH-main}'
 alias gpus='git push upstream staging'
 
 # Git push with the --force-with-lease option
@@ -56,7 +56,7 @@ alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias grd='git rebase develop'
 alias gri='git rebase -i'
-alias grm='git rebase master'
+alias grm='git rebase ${GIT_MAIN_BRANCH-main}'
 alias grs='git rebase staging'
 
 # Git stash aliases
