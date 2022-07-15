@@ -13,6 +13,7 @@ alias gbd='git for-each-ref --sort=-committerdate refs/heads/ --format="%(author
 # Git commit aliases
 alias gc='git commit'
 alias gca='git commit --amend'
+alias gcane='git commit --amend --no-edit'
 alias gcm='git commit -m'
 
 # Git checkout aliases
