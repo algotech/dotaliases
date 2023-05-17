@@ -17,7 +17,7 @@ source ~/.aliases/bash_aliases
 - **git**: `hub`
 
 ### Git add and remove ###
-- **gh**: `git browse -- /`
+- **ghb**: `git browse -- /`
 - **ghi** `git browse -- /issues`
 - **ghp**: `git browse -- /pulls`
 - **ghw**: `git browse -- /wiki`
