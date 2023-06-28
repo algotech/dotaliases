@@ -4,7 +4,7 @@ if command_exists hub ; then
 fi
 
 # Open the GitHub page for the current repository
-alias gh='git browse -- /'
+alias ghb='git browse -- /'
 alias ghi='git browse -- /issues'
 alias ghp='git browse -- /pulls'
 alias ghw='git browse -- /wiki'
