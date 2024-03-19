@@ -60,6 +60,13 @@ alias gri='git rebase -i'
 alias grm='git rebase ${GIT_MAIN_BRANCH-main}'
 alias grs='git rebase staging'
 
+# Git merge aliases
+alias gma='git merge --abort'
+alias gmc='git merge --continue'
+alias gmd='git merge develop'
+alias gmm='git merge ${GIT_MAIN_BRANCH-main}'
+alias gms='git merge staging'
+
 # Git stash aliases
 alias gsl='git stash list'
 alias gsp='git stash pop'
