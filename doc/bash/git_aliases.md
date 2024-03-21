@@ -69,6 +69,13 @@ E.g. `export GIT_MAIN_BRANCH=master`.
 - **grm**: `git rebase ${GIT_MAIN_BRANCH-main}`
 - **grs**: `git rebase staging`
 
+### Git merge ###
+- **gma**: `git merge --abort`
+- **gmc**: `git merge --continue`
+- **gmd**: `git merge develop`
+- **gmm**: `git merge ${GIT_MAIN_BRANCH-main}`
+- **gms**: `git merge staging`
+
 ### Git stash ###
 - **gsl**: `git stash list`
 - **gsp**: `git stash pop`
